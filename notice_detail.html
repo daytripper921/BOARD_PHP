@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="lib/swiper.min.css">
+</head>
+<body>
+
+
+    <!-- 컨텐츠 시작 -->
+    <header class="header">
+        <h2>공지사항</h2>
+        <a href="javascript:;" class="nav-back"></a>
+    </header>
+
+    <div class="container">
+       <div class="detail-wrap">
+
+            <section class="detail-top">
+                <div class="detail-info">
+                    <b class="list-cate">[공지]</b>&nbsp;
+                    <span class="list-author">관리자</span>
+                </div>
+
+                <div class="detail-date">
+                    <p class="published">작성 <span>2021.01.02</span></p>
+                    &nbsp;&#124;&nbsp;
+                    <p class="edited">최종수정 <span>2021.01.04</span></p>
+                </div>
+            </section>
+
+            <section class="detail-content">
+                <p>
+                    {본문내용 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea doloremque, voluptas reprehenderit ipsum saepe iure consequatur temporibus facere. Iusto dolorem totam aliquid quos natus qui distinctio mollitia illo, adipisci impedit optio ea quas tenetur repudiandae vel officiis nostrum, laudantium facere. Quia expedita, dolorem est id doloribus delectus qui repudiandae. }
+                </p>
+
+                <div class="attached-files">
+                    
+                    첨부한 이미지
+                    
+                </div>
+            </section>
+            
+            <div class="form-btn-wrap">
+                <a href="javascript:;" class="to-list">목록</a>
+
+                <!-- 관리자만 -->
+                <a href="javascript:;" class="edit">수정</a>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="divider"></div>
+    
+    <!-- 댓글 -->
+    <div class="inquiry-comment">
+        <h3>| COMMENT</h3>
+
+        <div class="comment-inner">
+            <ul class="comment-list">
+                <li>
+                    <b>김땡땡</b>
+                    <p>ㅠㅠ</p>
+                    <span class="comment-time">2021.01.05&nbsp;<small>12:00:00</small></span>
+                    <a href="javascript:;" class="comment-edit">댓글수정</a>
+                    <!-- 댓글첨부파일 썸네일, 첨부파일 있을 경우에만 생성? -->
+                    <div class="comment-attached">
+                        댓글첨부파일 썸네일 영역
+                        <!-- <a href="javascript:;">
+                            <img src="" alt="">
+                        </a> -->
+                    </div>
+                </li>
+                <li>
+                    <b>관리자</b>
+                    <p>^^</p>
+                    <span class="comment-time">2021.01.06&nbsp;<small>19:00:00</small></span>
+                    <a href="javascript:;" class="comment-edit">댓글수정</a>
+                    <!-- <div class="comment-attached"></div> -->
+                </li>
+            </ul>
+
+            <div class="comment-write-area">
+                <textarea placeholder="댓글을 입력해주세요."></textarea>
+                
+                <!-- 미리보기영역 -->
+                <div class="img-preview-comment">
+                    <!-- <div class="img-wrap">
+                        <img src="">
+                        <span class="img-del">X</span>
+                    </div> -->
+                </div>
+
+                <div class="comment-bottom">
+                    <button>
+                        <input type="file" id="imgUp4" multiple>
+                    </button>
+                    <a href="javascript:;" class="reply-btn">등록</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 컨텐츠 끝 -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="script/common.js"></script>
+<script src="lib/swiper.min.js"></script>
+<script>
+
+
+$(document).ready(function(){
+    
+});
+
+
+
+
+</script>
+</body>
+</html>

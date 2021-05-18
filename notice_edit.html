@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="lib/swiper.min.css"> -->
+</head>
+<body>
+
+
+    <!-- 컨텐츠 시작 -->
+    <header class="header">
+        <h2>공지사항</h2>
+        <a href="javascript:;" class="nav-back"></a>
+    </header>
+
+    <div class="container">
+
+        <form action="/" method="" class="notice-form">
+            <fieldset>
+                <legend class="hidden">공지사항</legend>
+
+                <table>
+                    <caption class="hidden">공지사항 작성 테이블</caption>
+                    <tbody>
+                        <tr>
+                            <td>                                
+                                <textarea placeholder="공지 내용을 입력해주세요." class="notice-con"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+                <!-- 첨부이미지 미리보기영역 -->
+                <div class="img-preview">
+                    <!-- <div class="img-wrap">
+                        <img src="">
+                        <span class="img-del">X</span>
+                    </div> -->
+                </div>
+
+                <!-- 파일첨부 -->
+                <!-- 임시 id, 추후 html, 스크립트 수정 -->
+                <input type="file" name="" id="imgUp3" multiple>
+                
+               
+                <div class="form-btn-wrap">
+                    <a href="./notice_list.html" class="to-list">목록</a>
+                    <input type="reset" value="작성취소">
+                    <input type="submit" value="저장">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <!-- 컨텐츠 끝 -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<!-- <script src="script/common.js"></script> -->
+<!-- <script src="lib/swiper.min.js"></script> -->
+<script>
+
+$(document).ready(function(){
+    
+    //첨부파일 미리보기
+    /*
+    let sel_files=[];
+
+    $("#imgUp3").on("change", handleFileSelect);
+
+    function handleFileSelect(e){
+
+        let files = e.target.files;
+        let filesArr = Array.prototype.slice.call(files);
+
+        filesArr.forEach(function(f){
+
+            if(f.type.match("image.*")){
+                sel_files.push(f);
+
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    let img_html = `<div class="img-wrap">
+                                        <img src="${e.target.result}"/>
+                                        <span class="img-del">X</span>
+                                    </div>`;
+                    $(".img-preview").append(img_html);
+                }
+                reader.readAsDataURL(f);
+            }
+            if(f.type.match("video.*")){
+                sel_files.push(f);
+
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    let video_html = `<div class="img-wrap">
+                                        <video src="${e.target.result}"/>
+                                        <span href="" class="img-del">delete</span>
+                                      </div>`;
+                    $(".img-preview").append(video_html);
+                }
+                reader.readAsDataURL(f);
+            }
+        });
+    }
+    */
+});
+
+
+
+</script>
+</body>
+</html>

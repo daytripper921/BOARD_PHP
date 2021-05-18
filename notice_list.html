@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="lib/swiper.min.css">
+</head>
+<body>
+
+
+    <!-- 컨텐츠 시작 -->
+    <header class="header">
+        <h2>공지사항</h2>
+    </header>
+
+    <div class="container">
+
+
+        <div class="tab-content">
+            
+            <div class="inq-list notice-list">
+                <table>
+                    <caption class="hidden">공지 리스트 테이블</caption>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="./notice_detail.html" class="list-wrap">
+                                    <div class="info-row">
+                                        <b class="list-cate">[공지]</b>&nbsp;<span class="list-author">관리자</span>&nbsp;&#124;&nbsp;
+                                        <p class="view">조회수 <span>1</span></p>&nbsp;&#124;&nbsp;<span class="list-date">작성일</span>
+                                    </div>
+                                    <!-- 첨부한 파일 있을 경우, 
+                                    list-file.on -->
+                                    <div class="title-row">
+                                        <span class="list-title notice-title">{공지사항내용 최대 nn자 노출}</span>
+                                        <span class="list-file"></span>&nbsp;
+                                        <span class="list-reply">(2)</span>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./notice_detail.html" class="list-wrap">
+                                    <div class="info-row">
+                                        <b class="list-cate">[공지]</b>&nbsp;<span class="list-author">관리자</span>&nbsp;&#124;&nbsp;
+                                        <p class="view">조회수 <span>0</span></p>&nbsp;&#124;&nbsp;<span class="list-date">2025.03.04</span>
+                                    </div>
+                                    
+                                    <div class="title-row notice-title-row">
+                                        <span class="list-title notice-title">
+                                            {문의드립니다. 문의제목 글자표시제한}{문의드립니다. 문의제목 글자표시제한}
+                                        </span>
+                                        <span class="list-reply">(2)</span>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./notice_detail.html" class="list-wrap">
+                                    <div class="info-row">
+                                        <b class="list-cate">[공지]</b>&nbsp;<span class="list-author">관리자</span>&nbsp;&#124;&nbsp;
+                                        <p class="view">조회수 <span>10</span></p>&nbsp;&#124;&nbsp;<span class="list-date">2025.03.04</span>
+                                    </div>
+                                    
+                                    <div class="title-row notice-title-row">
+                                        <span class="list-title notice-title">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quibusdam
+                                        </span>
+                                        <span class="list-reply"></span>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./notice_detail.html" class="list-wrap">
+                                    <div class="info-row">
+                                        <b class="list-cate">[공지]</b>&nbsp;<span class="list-author">관리자</span>&nbsp;&#124;&nbsp;
+                                        <p class="view">조회수 <span>0</span></p>&nbsp;&#124;&nbsp;<span class="list-date">2025.03.04</span>
+                                    </div>
+                                    
+                                    <div class="title-row notice-title-row">
+                                        <span class="list-title notice-title">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sit iste minus ad expedita natus corrupti, fuga
+                                        </span>
+                                        <span class="list-reply"></span>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./notice_detail.html" class="list-wrap">
+                                    <div class="info-row">
+                                        <b class="list-cate">[공지]</b>&nbsp;<span class="list-author">관리자</span>&nbsp;&#124;&nbsp;
+                                        <p class="view">조회수 <span>0</span></p>&nbsp;&#124;&nbsp;<span class="list-date">2025.03.04</span>
+                                    </div>
+                                    
+                                    <div class="title-row notice-title-row">
+                                        <span class="list-title notice-title">
+                                            공지사항 필독
+                                        </span>
+                                        <span class="list-reply">(11)</span>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="upper-btn-wrap">
+                    <!-- 관리자만 -->
+                    <a href="./notice_edit.html" class="notice-write">작성하기</a>
+                </div>
+                
+                <div class="paging-wrap">
+                    <div class="paging">
+                        <!-- 활성화 : a.on 클래스 추가 -->
+                        <a href="javascript:;" class="first"></a>
+                        <a href="javascript:;" class="prev"></a>
+                        <a href="javascript:;" class="on">1</a>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;" class="next"></a>
+                        <a href="javascript:;" class="last"></a>                
+                    </div>
+                </div>
+            </div>
+
+            <!-- 데이터 없을 경우 -->
+            <div class="data-none">등록된 공지가 없습니다.</div>
+
+        </div>
+
+    </div>
+    <!-- 컨텐츠 끝 -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="script/common.js"></script>
+<script src="lib/swiper.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    
+});
+
+
+</script>
+</body>
+</html>

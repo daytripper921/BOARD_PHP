@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="lib/swiper.min.css">
+</head>
+<body>
+    
+
+    <!-- 컨텐츠 시작 -->
+    <header class="header">
+        <h2>문의 상세</h2>
+        <a href="javascript:;" class="nav-back"></a>
+    </header>
+
+    <div class="container">
+       <div class="inquiry-detail-wrap detail-wrap">
+            <section class="detail-top">
+                <div class="detail-info">
+                    <b class="list-cate">[카테고리]</b>&nbsp;<span class="list-author">작성자</span>&nbsp;<span class="list-status processing"></span>
+                </div>
+
+                <div class="detail-title">
+                    <span class="list-title">{문의드립니다. 문의제목내용}{문의드립니다. 문의제목내용}{문의드립니다. 문의제목내용}</span>
+                </div>
+                <div class="detail-date">
+                    <p class="published">작성 <span>2021.01.02</span></p>
+                    &nbsp;&#124;&nbsp;
+                    <p class="edited">최종수정 <span>2021.01.04</span></p>
+                </div>
+            </section>
+
+            <section class="detail-content">
+                <p>
+                    {본문내용 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea doloremque, voluptas reprehenderit ipsum saepe iure consequatur temporibus facere. Iusto dolorem totam aliquid quos natus qui distinctio mollitia illo, adipisci impedit optio ea quas tenetur repudiandae vel officiis nostrum, laudantium facere. Quia expedita, dolorem est id doloribus delectus qui repudiandae eos ipsa eligendi placeat obcaecati et beatae repellendus ut hic aliquam libero quas eum soluta. Minima, nostrum error perspiciatis, perferendis cupiditate culpa dicta voluptas dolores nulla at ipsum impedit consectetur, beatae rerum. Repellat amet laborum odit voluptas aspernatur est sequi non saepe magnam fugiat quisquam illo quos tempora porro, nisi molestias? }
+                </p>
+
+                <div class="attached-files">
+                    
+                    첨부한 이미지 영역
+                    <img src="" alt="">
+                    
+                </div>
+            </section>
+
+            <!-- 관리자만 노출 -->
+            <div class="select-wrap">
+                <select name="" id="">
+                    <option value="">담당자 지정</option>
+                    <option value="">김땡땡</option>
+                    <option value="">땡땡땡</option>
+                </select>
+            </div>
+            
+            <div class="form-btn-wrap">
+                <!-- 관리자용 버튼 -->
+                <a href="javascript:;" class="admin-btn btn-processing">처리중</a>
+                <a href="javascript:;" class="admin-btn btn-complete">처리완료</a>
+
+                <a href="javascript:;" class="to-list">목록</a>
+                <a href="javascript:;" class="edit">수정</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    
+    <!-- 댓글 -->
+    <div class="inquiry-comment">
+        <h3>| COMMENT</h3>
+
+        <div class="comment-inner">
+            <ul class="comment-list">
+
+                <!-- 댓글수정 -->
+                <li>
+                    <b>작성자</b>
+                    <div class="comment-write-area comment-modify">
+                        <textarea placeholder="댓글을 입력해주세요."></textarea>
+                        
+                        <!-- 미리보기영역 -->
+                        <div class="img-preview-comment">
+                            <div class="img-wrap">
+                                <img src="./images/test.jpg" alt="">
+                                <a class="img-del">X</a>
+                            </div>
+                        </div>
+        
+                        <div class="comment-bottom">
+                            <div class="btns">
+                                <button>
+                                    <input type="file" id="imgUp2">
+                                </button>
+                                <button>
+                                    <input type="file" id="imgUp2">
+                                </button>
+                                <button>
+                                    <input type="file" id="imgUp2">
+                                </button>
+                                <button>
+                                    <input type="file" id="imgUp2">
+                                </button>
+                                <button>
+                                    <input type="file" id="imgUp2">
+                                </button>
+                            </div>
+                            <a href="javascript:;" class="reply-btn">등록</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <!-- 등록된 댓글 -->
+                <li>
+                    <b>관리자</b>
+                    <p>처리완료했습니다.</p>
+                    
+                    <!-- 댓글첨부파일 썸네일, 첨부파일 있을 경우에만 생성? -->
+                    <div class="comment-attached">
+                        <a href="javascript:;" class="img1">
+                            <img src="./images/test.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="img2">
+                            <img src="./images/test2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <span class="comment-time">2021.01.05&nbsp;<small>12:00:00</small></span>
+                    <!-- 작성자일경우 노출 -->
+                    <a href="javascript:;" class="comment-fn comment-edit">댓글수정</a>
+                    <a href="javascript:;" class="comment-fn comment-del">삭제</a>
+                </li>
+            </ul>
+
+            <!-- 댓글작성 -->
+            <div class="comment-write-area comment-new">
+                <textarea placeholder="댓글을 입력해주세요."></textarea>
+                
+                <!-- 미리보기영역 -->
+                <div class="img-preview-comment">
+                    <div class="img-wrap">
+                        <img src="./images/test.jpg" alt="">
+                        <a class="img-del">X</a>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./images/test.jpg" alt="">
+                        <a class="img-del">X</a>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./images/test.jpg" alt="">
+                        <a class="img-del">X</a>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./images/test.jpg" alt="">
+                        <a class="img-del">X</a>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./images/test.jpg" alt="">
+                        <a class="img-del">X</a>
+                    </div>
+                </div>
+
+                <div class="comment-bottom">
+                    <div class="btns">
+                        <button>
+                            <input type="file" id="imgUp2">
+                        </button>
+                        <button>
+                            <input type="file" id="imgUp2">
+                        </button>
+                        <button>
+                            <input type="file" id="imgUp2">
+                        </button>
+                        <button>
+                            <input type="file" id="imgUp2">
+                        </button>
+                        <button>
+                            <input type="file" id="imgUp2">
+                        </button>
+                    </div>
+                    <a href="javascript:;" class="reply-btn">등록</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 컨텐츠 끝 -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="script/common.js"></script>
+<script src="lib/swiper.min.js"></script>
+<script>
+
+
+$(document).ready(function(){
+
+    // 이미지 클릭
+    let commentImg = $(".comment-attached>a");
+
+    commentImg.on("click", function(){
+        let items = $(this).children("img");
+        let imgSrc = items.attr("src");
+
+        $(items).each(function(){
+            $("body")
+                .append(
+                    $("<div class='imgLg'>")
+                    .append(
+                        $("<img>").attr({src:imgSrc})
+                    )
+                    .append(
+                        $("<a class='imgClose'>")
+                    )
+                ) 
+        });
+    });
+
+    $("body").on("click", ".imgLg .imgClose", function(){
+        $(".imgLg").hide();
+    });
+
+    
+    //첨부파일 미리보기
+    /*
+    let sel_files=[];
+
+    $("#imgUp2").on("change", handleFileSelect);
+
+    function handleFileSelect(e){
+
+        let files = e.target.files;
+        let filesArr = Array.prototype.slice.call(files);
+
+        filesArr.forEach(function(f){
+
+            if(f.type.match("image.*")){
+                sel_files.push(f);
+
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    let img_html = `<div class="img-wrap">
+                                        <img src="${e.target.result}"/>
+                                        <span class="img-del">X</span>
+                                    </div>`;
+                    $(".img-preview-comment").append(img_html);
+                }
+                reader.readAsDataURL(f);
+            }
+            if(f.type.match("video.*")){
+                sel_files.push(f);
+
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    let video_html = `<div class="img-wrap">
+                                        <video src="${e.target.result}"/>
+                                        <span href="" class="img-del">delete</span>
+                                      </div>`;
+                    $(".img-preview-comment").append(video_html);
+                }
+                reader.readAsDataURL(f);
+            }
+        });
+
+    }
+    */
+});
+
+
+
+
+</script>
+</body>
+</html>

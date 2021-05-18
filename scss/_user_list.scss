@@ -1,0 +1,25 @@
+.user-list-wrap {
+    width: 100%; padding: 0 16px; box-sizing: border-box; 
+    .tab-content {
+        margin-top: 20px;
+        .user-section {
+            &.on {display: block;}
+            &.user-withdraw-list {padding-top: 30px;}
+            .table-wrap {
+                width: 100%;overflow-x: auto;
+                table {
+                    margin-bottom: 30px; width: 100%; border-collapse: collapse;
+                    tbody {
+                        tr {
+                            th {border-bottom: 1px solid #efefef; border-top: 1px solid #efefef; font-size: 13px; text-align: center; padding: 10px 0;box-sizing: border-box;}
+                            td {
+                                border-bottom: 1px solid #efefef; font-size: 12px;text-align: center; padding: 10px 0;box-sizing: border-box;
+                                a.user-btn {border: 1px solid #007bff; height: 20px; width: 36px;display: block; line-height: 20px; text-align: center; border-radius: 15px; color:#007bff;margin: 0 auto;font-size: 11px;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

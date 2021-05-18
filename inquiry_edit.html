@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="lib/swiper.min.css"> -->
+</head>
+<body>
+
+
+    <!-- 컨텐츠 시작 -->
+    <header class="header">
+        <h2>문의하기</h2>
+        <a href="javascript:;" class="nav-back"></a>
+    </header>
+
+    <div class="container">
+
+        <form action="/" method="" class="inquiry_form">
+            <fieldset>
+                <legend class="hidden">문의하기</legend>
+
+                <table>
+                    <caption class="hidden">문의하기 테이블</caption>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <!-- 레이블, 아이디 변경해야 함! -->
+                                <label for="">카테고리</label>
+                            </th>
+                            <td>
+                                <!-- value 추후 수정 -->
+                                <select name="" class="cate-select">
+                                    <option value="">문의유형</option>
+                                    <option value="01">스탬프</option>
+                                    <option value="02">쿠폰</option>
+                                    <option value="03">회원조회</option>
+                                    <option value="04">회원이관</option>
+                                    <option value="05">오더</option>
+                                    <option value="09">기타</option>
+                                </select>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <th>
+                                <label for="inq_title">제목</label>
+                            </th>
+                            <td>
+                                <input type="text" id="inq_title" placeholder="제목을 입력해주세요.">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th><label for="inq_content">내용</label></th>
+                            <td>
+                                <textarea name="" id="" class="inq-con">
+    
+                                </textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- 첨부이미지 미리보기영역 -->
+                <div class="img-preview">
+                    <!-- <div class="img-wrap">
+                        <img src="">
+                        <span class="img-del">X</span>
+                    </div> -->
+                </div>
+
+                <!-- 파일첨부 -->
+                <!-- 임시 id, 추후 html, 스크립트 수정 -->
+                <input type="file" name="" id="imgUp" multiple>
+                
+                <div class="form-btn-wrap">
+                    <!-- 목록버튼 - 작성글 수정시에만 노출 -->
+                    <a href="javascript:;" class="to-list">목록</a>
+
+                    <input type="reset" value="작성취소">
+
+                    <input type="submit" value="저장">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <!-- 컨텐츠 끝 -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<!-- <script src="script/common.js"></script> -->
+<!-- <script src="lib/swiper.min.js"></script> -->
+<script>
+
+$(document).ready(function(){
+
+    
+    //첨부파일 미리보기
+    /*
+    let sel_files=[];
+
+    $("#imgUp").on("change", handleFileSelect);
+
+    function handleFileSelect(e){
+
+        $(".img-preview").empty();
+
+        let files = e.target.files;
+        let filesArr = Array.prototype.slice.call(files);
+       
+        filesArr.forEach(function(f){
+
+            if(f.type.match("image.*")){
+                sel_files.push(f);
+
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    let img_html = `<div class="img-wrap">
+                                        <img src="${e.target.result}"/>
+                                        <span class="img-del">X</span>
+                                    </div>`;
+                    
+                    $(".img-preview").append(img_html);
+                }
+                reader.readAsDataURL(f);
+            }
+            if(f.type.match("video.*")){
+                sel_files.push(f);
+
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    let video_html = `<div class="img-wrap">
+                                        <video src="${e.target.result}"/>
+                                        <span class="img-del">delete</span>
+                                      </div>`;
+                    $(".img-preview").append(video_html);
+                }
+                reader.readAsDataURL(f);
+            }
+        });
+        // console.log(files);
+        // console.log($("#imgUp").val());
+    }
+    */
+
+    // 문의유형별 필수입력항목
+    let selectCategory = $(".cate-select");
+    let inqContent = $(".inq-con");
+
+    selectCategory.on('change', function(){
+        console.log($(this));
+        if($(this).val() == "01" || $(this).val() == "02" || $(this).val() == "05" || $(this).val() == "09"){
+            inqContent.val("매장명 : \n거래일시(시, 분, 초) : \n회원번호 : \n증상 : \n요청사항 : ")
+        } else if($(this).val() == "03"){
+            inqContent.val("매장명 : \n거래일시(시, 분, 초) : \n사유 : ")
+        }else if($(this).val() == "04"){
+            inqContent.val("매장명 : \n접수일 : \n이전 연락처 : \n변경된 연락처 : ")
+        }
+    });
+});
+
+
+
+</script>
+</body>
+</html>
