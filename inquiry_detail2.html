@@ -216,17 +216,27 @@ $(document).ready(function(){
         let items = $(this).children("img");
         let imgSrc = items.attr("src");
 
+        // $(items).each(function(){
+        //     $("body")
+        //         .append(
+        //             $("<div class='imgLg'>")
+        //             .append(
+        //                 $("<img>").attr({src:imgSrc})
+        //             )
+        //             .append(
+        //                 $("<a class='imgClose'>")
+        //             )
+        //         ) 
+        // });
+
         $(items).each(function(){
             $("body")
                 .append(
-                    $("<div class='imgLg'>")
-                    .append(
-                        $("<img>").attr({src:imgSrc})
-                    )
-                    .append(
-                        $("<a class='imgClose'>")
-                    )
-                ) 
+                    $("<img class='viewImg'>").attr({src:imgSrc})
+                )
+                .append(
+                    $("<a class='imgClose'>")
+                )
         });
 
     });

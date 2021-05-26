@@ -14,7 +14,7 @@
     video {width: 80px; height: 80px; object-fit: contain;}
 }
 .img-preview-comment {
-    width: 100%; padding: 5px 10px; box-sizing: border-box;margin-bottom: 10px;
+    width: 100%; padding: 5px 10px; box-sizing: border-box;margin-bottom: 10px;display: none;
     
     .img-wrap {
         width: 50px; position: relative; 
@@ -24,7 +24,7 @@
     }
 
     img {width: 50px; height: 50px; }
-    video {width: 60px; height: 60px;}
+    video {width: 50px; height: 50px;}
 }
 
 /* 작성 글 리스트 my_inquiry_list */
@@ -196,48 +196,64 @@
 .inquiry-comment {
     width: 100%; padding: 40px 16px; box-sizing: border-box; margin-bottom: 50px;
     h3 {font-size: 16px; color: #333; margin-bottom: 10px; color:#435a8a; text-shadow: 1px 1px rgba(189, 189, 189, 0.877);}
+}   
 
-    .comment-inner {
-        width: 100%;
-        ul.comment-list {
-            width: 100%; margin-bottom: 30px;
-            li {
-                width: 100%; border-bottom: 1px solid #efefef; padding: 10px 0;
-                b {font-size: 14px;}
-                p {font-size: 14px; margin-top: 5px; line-height: 1.3;}
-                
-                .comment-time {font-size: 12px; color: #aaa; margin-top: 5px; display: inline-block;}
-                small {font-size: 12px; color: #aaa;}
-                .comment-attached {
-                    margin-top: 10px; width: 100%;
-                    a {
+.comment-inner {
+    width: 100%;
+    ul.comment-list {
+        width: 100%; margin-bottom: 30px;
+        li {
+            width: 100%; border-bottom: 1px solid #efefef; padding: 10px 0;
+            b {font-size: 14px;}
+            p {font-size: 14px; margin-top: 5px; line-height: 1.3;}
+            
+            .comment-time {font-size: 12px; color: #aaa; margin-top: 5px; display: inline-block;}
+            small {font-size: 12px; color: #aaa;}
+            .comment-attached {
+                margin-top: 10px; width: 100%;
+                a {
 
-                        img {width: 80px; height: 80px;}
-                    }
+                    img {width: 80px; height: 80px;}
                 }
-                &:last-child {border-bottom: none;}
-                a.comment-fn {font-size: 12px; margin-left: 10px; color: #aaa;}
-                .comm-flex {display: flex; align-items: center; justify-content: space-between;}
             }
-        }
-
-        .comment-write-area {
-            width: 100%; border: 1px solid #435a8a;  margin-top: 10px;
-            textarea {
-                resize: none;width: 100%;box-sizing: border-box; padding: 10px; height: 60px; line-height: 1.4; border: none;
-                &:focus {outline: none;}
-            }
-            .comment-bottom {
-                width: 100%; height: 30px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #efefef; padding-left: 5px; box-sizing: border-box;
-                button {
-                    width: 30px; height: 30px; border: none; overflow: hidden; background: transparent url('../images/camera.svg') no-repeat center; background-size: 22px;
-                    input[type=file] {opacity: 0.01;}
-                }
-                a.reply-btn {width: 50px; height: 30px; background: #435a8a; color: #fff;display: block; text-align: center; line-height: 30px; font-size: 14px; font-weight: bold;}
-            }
+            &:last-child {border-bottom: none;}
+            a.comment-fn {font-size: 12px; margin-left: 10px; color: #aaa;}
+            .comm-flex {display: flex; align-items: center; justify-content: space-between;}
         }
     }
-}   
+
+    .comment-write-area {
+        width: 100%; border: 1px solid #435a8a;  margin-top: 10px;box-sizing: border-box;
+        textarea {
+            resize: none;width: 100%;box-sizing: border-box; padding: 10px; height: 100px; line-height: 1.4; border: none;
+            &:focus {outline: none;}
+        }
+        .comment-bottom {
+            width: 100%; height: 30px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #efefef; padding-left: 5px; box-sizing: border-box;
+            button {
+                width: 30px; height: 30px; border: none; overflow: hidden; background: transparent url('../images/camera.svg') no-repeat center; background-size: 22px;
+                input[type=file] {opacity: 0.01;}
+            }
+            button.on { width: 30px; height: 30px; border: none; overflow: hidden; background: transparent url('../images/camera_on.svg') no-repeat center;background-size: 22px;}
+            a.reply-btn {width: 50px; height: 30px; background: #435a8a; color: #fff;display: block; text-align: center; line-height: 30px; font-size: 14px; font-weight: bold;}
+        }
+    }
+}
+
+/* 댓글수정 */
+.cm-back {
+    width: 100%; height: 100vh; position: fixed; left: 0; top: 0; z-index: 100; background: #fff; display: none;
+    .top {
+        height: 56px;background: #435a8a;display: flex; align-items: center; justify-content: space-between;
+        a.cm-modify-close {width: 56px; height: 56px; display: block; background:url('../images/close_wh.svg') no-repeat center; background-size: 36%;}
+        a.cm-modify-btn {width: 56px; height: 56px; display: block; color: #fff; }
+        h3 {color:#fff;}
+    }
+
+    .comment-inner {
+        padding: 0 16px; box-sizing: border-box;
+    }
+}
 
 /* 이미지 확대 */
 .imgLg {
